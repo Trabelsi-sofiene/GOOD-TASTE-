@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Landing.css">
+    <link rel="shortcut icon" href="./assets/logo.png">
+    <title>LANDING</title>
+</head>
+<body>
+
+    <nav>
+        <div class="topnav">
+          <div class="nav-content">
+            <div class="logo-content">
+              <img class="logo" src="./assets/logo.png" alt="logo" />
+            </div>
+            <div class="topnav-content">
+              <a  href="Home.html">HOME</a>
+              <a class="active" href="Landing.html">LANDING</a>
+              <a href="About.html">ABOUT</a>
+              <a href="Menu.html">MENU</a>
+              <a href="Team.html">TEAM</a>
+              <a href="Contact.html">CONTACT</a>
+            </div>
+          </div>
+        </div>
+        <hr>
+    </nav>
+
+    <div class="part1">
+        <div class="left">
+            <h4>OUR RESTAURANT</h4>
+            <h1>Where every ingredient tells a story</h1>
+            <button onclick="gotoLink(this)" value="About.html" class="btn">READ MORE</button>
+        </div>
+        <div class="right"></div>
+    </div>
+
+    
+    <div class="menu">
+        <h1> View Our Menu </h1>
+        <h4>Hundreds of flavors under one roof</h4>
+        <div class="meals">
+
+
+
+            <article class="card">
+                <div class="card__inner">
+                    <div class="card__body card__body--front">
+                        
+                    </div>
+                    <div class="card__body card__body--back">
+                        <h2 class="card__title">Hot Pizza</h2>
+                        <button onclick="gotoLink(this)" value="Menu.html" class="btn2">READ MORE</button>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__inner">
+                    <div class="card__body card__body--front1">
+                        
+                    </div>
+                    <div class="card__body card__body--back">
+                        <h2 class="card__title">Salads</h2>
+                        <button onclick="gotoLink(this)" value="Menu.html" class="btn2">READ MORE</button>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__inner">
+                    <div class="card__body card__body--front2">
+                        
+                    </div>
+                    <div class="card__body card__body--back">
+                        <h2 class="card__title">Dessert</h2>
+                        <button onclick="gotoLink(this)" value="Menu.html" class="btn2">READ MORE</button>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__inner">
+                    <div class="card__body card__body--front3">
+                        
+                    </div>
+                    <div class="card__body card__body--back">
+                        <h2 class="card__title">Drinks</h2>
+                        <button onclick="gotoLink(this)" value="Menu.html" class="btn2">READ MORE</button>
+                    </div>
+                </div>
+            </article>
+            
+            
+            
+        </div>
+    </div>
+    
+    
+
+    <div class="part1">
+        
+        <div class="left1"></div>
+        <div class="right1">
+            <h4>OUR RESTAURANT</h4>
+            <h1>A culinary adventure for all the senses</h1>
+            <button onclick="gotoLink(this)" value="About.html" class="btn1">READ MORE</button>
+        </div>
+    </div>
+    <div class="reviews">
+        <div class="review">
+            <form class="fr" action="">
+                <label class="fr__label" for="face-rating">How was your experience?</label>
+                <br/><br/>
+        
+                <div class="fr__face" role="img" aria-label="Straight face">
+                    <div class="fr__face-right-eye" data-right></div>
+                    <div class="fr__face-left-eye" data-left></div>
+                    <div class="fr__face-mouth-lower" data-mouth-lower></div>
+                    <div class="fr__face-mouth-upper" data-mouth-upper></div>
+                </div>
+                <input class="fr__input" id="face-rating" type="range" value="2.5" min="0" max="5" step="0.1">
+            </form>
+        
+            <script>
+                window.addEventListener("DOMContentLoaded",() => {
+                    const fr = new FaceRating("#face-rating");
+                });
+            
+                class FaceRating {
+                    constructor(qs) {
+                        this.input = document.querySelector(qs);
+                        this.input?.addEventListener("input",this.update.bind(this));
+                        this.face = this.input?.previousElementSibling;
+                        this.update();
+                    }
+                    update(e) {
+                        let value = this.input.defaultValue;
+                
+                        if (e) value = e.target?.value;
+                        else this.input.value = value;
+                
+                        const min = this.input.min || 0;
+                        const max = this.input.max || 100;
+                        const percentRaw = (value - min) / (max - min) * 100;
+                        const percent = +percentRaw.toFixed(2);
+                        const maxHue = 120;
+                        const hueExtend = 30;
+                        const hue = Math.round(maxHue * percent / 100);
+                
+                        let hue2 = hue - hueExtend;
+                        if (hue2 < 0) hue2 += 360;
+                
+                        const hues = [hue,hue2];
+                        hues.forEach((h,i) => {
+                            this.face?.style.setProperty(`--face-hue${i + 1}`,h);
+                        });
+                
+                        this.input?.style.setProperty("--input-hue",hue);
+                        const duration = 1;
+                        const delay = -(duration * 0.99) * percent / 100;
+                        const parts = ["right","left","mouth-lower","mouth-upper"];
+                
+                        parts.forEach(p => {
+                            const el = this.face?.querySelector(`[data-${p}]`);
+                            el?.style.setProperty(`--delay-${p}`,`${delay}s`);
+                        });
+
+                        const faces = [
+                            "Sad face",
+                            "Slightly sad face",
+                            "Straight face",
+                            "Slightly happy face",
+                            "Happy face"
+                        ];
+                        let faceIndex = Math.floor(faces.length * percent / 100);
+                        if (faceIndex === faces.length) --faceIndex;
+                
+                        this.face?.setAttribute("aria-label",faces[faceIndex]);
+                    }
+                }
+            </script>
+        </div>
+    </div>
+    
+    <div class="part1">
+        <div class="left2">
+            <h4>OUR RESTAURANT</h4>
+            <h1>The magic of the kitchen</h1>
+            <button onclick="gotoLink(this)" value="About.html" class="btn">READ MORE</button>
+        </div>
+        <div class="right2"></div>
+    </div>
+
+    <section>
+        <div class="call-us">
+          <div class="calls-us-container">
+            <h1 id="text-call">Keep up to date with us</h1>
+            <h3 id="text-call-2">All reservation must be before 24h</h3>
+            <div id="phone-number-container">
+              <div id="icon"></div>
+              <div class="number">
+                <img id="phone-icon" src="./assets/phone.png" />
+                <h2 id="phone-number">+216 14 122 001</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <div class="part1">
+        
+        <div class="left3"></div>
+        <div class="right3">
+            <h4>OUR RESTAURANT</h4>
+            <h1>A new way to experience food</h1>
+            <button onclick="gotoLink(this)" value="About.html" class="btn1">READ MORE</button>
+        </div>
+    </div> 
+    
+    
+
+    <section class="HOME">
+        <div class="icons-container">
+          <div class="email">
+            <img class="icon" src="./assets/email (1).png" />
+          </div>
+          <div class="location">
+            <img class="icon" src="./assets/location.png" />
+          </div>
+          <div class="phone">
+            <img class="icon" src="./assets/forward.png" />
+          </div>
+        </div>
+        <div class="text-container">
+          <div class="email-texte">
+              <h2 class="h2-title-1">CHART TO US</h2>
+              <h3 class="h3-title-1">Our friendly team is here to help</h3>
+              <h4 class="h4-title-1">goodtaste@gmail.com</h4>
+          </div>
+          <div class="location-texte">
+              <h2 class="h2-title-2">OFFICE</h2>
+              <h3 class="h3-title-2">Come say hello at our office Good taste</h3>
+              <h4 class="h4-title-2">121 Rock Street,21 Avenue</h4>
+              <h4 class="h4-title-2">New York, NY 92103-9000</h4>
+          </div>
+          <div class="phone-texte">
+              <h2 class="h2-title-3">PHONE</h2>
+              <h3 class="h3-title-3">Mon-Fri from 8am to 5am</h3>
+              <h4 class="h4-title-3">+216 14 122 001</h4>
+          </div>
+        </div>
+    </section>
+    <script>
+        function gotoLink(link){
+            console.log(link.value);
+            location.href = link.value;
+        }
+    </script>
+    
+</body>
+</html>

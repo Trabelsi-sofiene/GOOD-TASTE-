@@ -1,0 +1,213 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    margin-bottom: 0;
+}
+.topnav-content {
+    background-color: white;
+    margin-top: 20px;
+    
+  }
+  .nav-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topnav {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-right: 250px;
+  }
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+  .logo-content {
+    margin-right: 250px;
+  }
+  
+  .topnav a {
+    float: left;
+  
+    color: black;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .topnav a:hover {
+    color: #e1d2a6;
+  }
+  
+  .topnav a.active {
+    color: #968962;
+  }
+
+.first {
+    text-align: center;
+    background-image: url('./assets/tasty-pizza-near-ingredients.jpg');
+    background-size: cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    height: 86vh;
+    width: 99vw;
+}
+.first h1{
+    color: white;
+    margin: 0;
+    padding-top:26vh;
+    font-size: 6vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.first h3{
+    color: white;
+    font-size: 2vw;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.mission{
+    background:#e8e3d8;
+    margin-bottom: 0;
+}
+img{
+    
+    border-radius: 20px;
+    width: 40vw;
+    height: 40vw;
+    margin: 0;
+
+}
+.par{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 33vh;
+    background:#e8e3d8;
+    text-align: center;
+    margin-bottom: 0;
+    
+}
+.par h1{
+    color: black;
+    margin: 0;
+    
+    font-size: 6vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.par p{
+    font-size: 1.5vw;
+}
+video{
+    
+    width: 99vw;
+    height: 72vh;
+    margin: 0;
+    object-fit: cover;
+}
+.para{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    height: 33vh;
+    background:#e8e3d8;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+.para h1{
+    color: black;
+    margin: 0;
+    
+    font-size: 6vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.para p{
+    font-size: 1vw;
+}
+.aboutus{
+    margin-top: 0;
+    text-align: center;
+    background-image: url('./assets/restaurant-interior.jpg');
+    background-size: cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    height: 68vh;
+    width: 99vw;
+    margin-bottom: 0;
+}
+
+.HOME{
+    margin-top: 5vh;
+    background:rgb(45, 44, 44);
+}
+
+.icons-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  
+  .icon {
+    width: 70px;
+    height: 70px;
+  }
+  .text-container{
+    display: flex;
+    justify-content: space-between;
+   padding-top: 1%;
+    margin-left: 12%;
+    margin-right: 12%;
+  }
+  .h2-title-1{
+    color: white;
+    font-size: 33px;
+    justify-content: stretch;
+  
+  }
+  .h2-title-2{
+    color: white;
+    font-size: 33px;
+    justify-content: stretch;
+    
+  }
+  .h2-title-3{
+    color: white;
+    font-size: 33px;
+    justify-content: stretch;
+  
+  }
+  .h3-title-1{
+    color: white;
+    font-size:1.5vw;
+    
+  }
+  .h4-title-1{
+    color: rgb(238, 131, 9);
+    
+    font-size: 1vw;
+  }
+  .h3-title-2{
+    color: white;
+    font-size:1.5vw;
+    
+  }
+  .h4-title-2{
+    color: rgb(238, 131, 9);
+    
+    font-size: 1vw;
+  }
+  .h3-title-3{
+    color: white;
+    font-size:1.5vw;
+  }
+  .h4-title-3{
+    color: rgb(238, 131, 9);
+    font-size: 1vw;
+  }

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-form.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Formulaire</title>
+</head>
+
+<body>
+   <div class="container-form">
+         <header>Registration</header>
+
+         <form action="#">
+            <div class="form first">
+                <div class="details">
+                      <span class="title">Personal Details</span>
+                      <div class="contenu">
+                           <div class="contenu-form">
+                                 <label >Full Name</label>
+                                 <input type="text" placeholder="Enter your full name" required>
+                           </div>
+                            <div class="contenu-form">
+                                <label>Date of birth</label>
+                                <input type="date" placeholder="Enter birth date" required>
+                            </div>
+                            <div class="contenu-form">
+                                <label>Email</label>
+                                <input type="text" placeholder="Enter Email" required>
+                          </div>
+                          <div class="contenu-form">
+                            <label >Mobile Number</label>
+                            <input type="number" placeholder="Enter your Mobile number" required>
+                      </div>
+                       <div class="contenu-form">
+                           <label>Gender</label>
+                           <input list="browsers" placeholder="Select your gender" >
+                              <datalist id="browsers">
+                                   <option value="male">
+                                   <option value="female">
+                                   <option value="other">
+                              </datalist>
+                       </div>
+                       <div class="contenu-form">
+                           <label>Occupation</label>
+                           <input type="text" placeholder="Enter your ocuppation" required>
+                     </div>
+                      </div>
+                </div>
+
+                <div class="idd">
+                    <span class="title">Identity Details</span>
+                    <div class="contenu">
+                         <div class="contenu-form">
+                               <label >ID Type</label>
+                               <input type="text" placeholder="Enter ID Type" required>
+                         </div>
+                          <div class="contenu-form">
+                              <label>Id Number</label>
+                              <input type="number" placeholder="Enter id number" required>
+                          </div>
+                          <div class="contenu-form">
+                              <label>Issued Date</label>
+                              <input type="date" placeholder="Enter Issued date" required>
+                        </div>
+                        <div class="contenu-form">
+                          <label >Issued State</label>
+                          <input type="text" placeholder="Enter Issued state" required>
+                    </div>
+                     <div class="contenu-form">
+                         <label>Expiry Date</label>
+                         <input type="date" placeholder="Enter Expiry date" required>
+                     </div>
+                     <div class="contenu-form">
+                         <label>Civil Status</label>
+                         <input list="browser" placeholder="Select your Civil status" >
+                              <datalist id="browser">
+                                   <option value="single">
+                                   <option value="married">
+                                   <option value="widdow">
+                              </datalist>
+                   </div>
+                    </div>
+                    
+                    <div class="buttons">
+                        <div class="backbtn" onclick="returnn()">
+                            <i class="uil uil-navigator"></i>
+                            <span class="btntext">Back to Home</span>
+                        </div>
+                        <button class="nextbtn" onclick="myFunction()">
+                            <span class="btntext" >next</span>
+                            <i class="uil uil-navigator"></i>
+                      </button>
+                  </div>
+                    
+              </div>
+            </div>
+            <br>
+        
+    </form>
+   </div>
+ <script src="script.js"></script> 
+</body>
+
+</html>
