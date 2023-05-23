@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,98 +10,166 @@
 </head>
 
 <body>
-   <div class="container-form">
-         <header>Registration</header>
+    <div class="container-form">
+        <header>Registration</header>
 
-         <form action="#">
+        <form action="connect.php" id="myform" method="POST">
             <div class="form first">
                 <div class="details">
-                      <span class="title">Personal Details</span>
-                      <div class="contenu">
-                           <div class="contenu-form">
-                                 <label >Full Name</label>
-                                 <input type="text" placeholder="Enter your full name" required>
-                           </div>
-                            <div class="contenu-form">
-                                <label>Date of birth</label>
-                                <input type="date" placeholder="Enter birth date" required>
-                            </div>
-                            <div class="contenu-form">
-                                <label>Email</label>
-                                <input type="text" placeholder="Enter Email" required>
-                          </div>
-                          <div class="contenu-form">
-                            <label >Mobile Number</label>
-                            <input type="number" placeholder="Enter your Mobile number" required>
-                      </div>
-                       <div class="contenu-form">
-                           <label>Gender</label>
-                           <input list="browsers" placeholder="Select your gender" >
-                              <datalist id="browsers">
-                                   <option value="male">
-                                   <option value="female">
-                                   <option value="other">
-                              </datalist>
-                       </div>
-                       <div class="contenu-form">
-                           <label>Occupation</label>
-                           <input type="text" placeholder="Enter your ocuppation" required>
-                     </div>
-                      </div>
-                </div>
+                    <ul style="list-style-image: url('./assets/logooo.png');">
+                        <li> <span class="title">Personal Details</span> </li>
+                    </ul>
+                    <div class="contenu">
+                        <div class="contenu-form">
+                            <label for="pseudo">Full Name</label>
+                            <input type="text" placeholder="Enter your full name" id="pseudo" name="pseudo" required>
+                        </div>
+                        <div class="contenu-form">
+                            <label>Date of birth</label>
+                            <input type="date" placeholder="Enter birth date" name="dateofbirth" id="dateofbirth"
+                                required>
+                        </div>
+                        <div class="contenu-form">
+                            <label>Email</label>
+                            <input type="text" placeholder="Enter Email" name="email" required>
+                        </div>
+                        <div class="contenu-form">
+                            <label>Mobile Number</label>
+                            <input type="number" placeholder="Enter your Mobile number" name="mobilenumber" required>
+                        </div>
+                        <div class="contenu-form">
+                            <label>Gender</label>
+                            <select name="gender" placeholder="Select your gender">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="contenu-form">
+                            <label>Occupation</label>
+                            <input type="text" placeholder="Enter your occupation" name="occupation" required>
+                        </div>
+                    </div>
 
+                </div>
+                    
+                   
                 <div class="idd">
-                    <span class="title">Identity Details</span>
+                    <ul style="list-style-image: url('./assets/logooo.png');">
+                    <li> <span class="title">Identity Details</span> </li>
+                    </ul>
                     <div class="contenu">
                          <div class="contenu-form">
                                <label >ID Type</label>
-                               <input type="text" placeholder="Enter ID Type" required>
+                               <input type="text" placeholder="Enter ID Type" id="id type" name="idtype" required>
                          </div>
                           <div class="contenu-form">
                               <label>Id Number</label>
-                              <input type="number" placeholder="Enter id number" required>
+                              <input type="number" placeholder="Enter id number" id="id number" name="idnumber" required>
                           </div>
                           <div class="contenu-form">
                               <label>Issued Date</label>
-                              <input type="date" placeholder="Enter Issued date" required>
+                              <input type="date" placeholder="Enter Issued date" id="issued date" name="issueddate" required>
                         </div>
                         <div class="contenu-form">
                           <label >Issued State</label>
-                          <input type="text" placeholder="Enter Issued state" required>
-                    </div>
-                     <div class="contenu-form">
+                          <input type="text" placeholder="Enter Issued state" id="issued state" name="issuedstate" required>
+                       </div>
+                       <div class="contenu-form">
                          <label>Expiry Date</label>
-                         <input type="date" placeholder="Enter Expiry date" required>
-                     </div>
-                     <div class="contenu-form">
+                         <input type="date" placeholder="Enter Expiry date" id="expiry date" name="expirydate" required>
+                       </div>
+                       <div class="contenu-form">
                          <label>Civil Status</label>
-                         <input list="browser" placeholder="Select your Civil status" >
+                         <input list="browser" placeholder="Select your Civil status" name="civilstatus" id="civilstatus">
                               <datalist id="browser">
                                    <option value="single">
                                    <option value="married">
                                    <option value="widdow">
                               </datalist>
-                   </div>
-                    </div>
-                    
-                    <div class="buttons">
-                        <div class="backbtn" onclick="returnn()">
-                            <i class="uil uil-navigator"></i>
-                            <span class="btntext">Back to Home</span>
-                        </div>
-                        <button class="nextbtn" onclick="myFunction()">
-                            <span class="btntext" >next</span>
-                            <i class="uil uil-navigator"></i>
-                      </button>
-                  </div>
-                    
+                       </div>
+                    </div>           
               </div>
+            
             </div>
+    
+        <div class="form second">
+            <div>
+                <ul style="list-style-image: url('./assets/logooo.png');">
+                    <li> <span class="title">Years of experience</span> </li>
+                    </ul>
+                <label>
+                <ol>
+                <li>Less than 5 years</li>
+                <li>Between 5 and 10 years</li>
+                <li>More than 10 Years</li>
+                </ol> 
+              </label>
+            <input class="input-text" type="text" placeholder="Enter the right choice" name="yearsofexp" id="years of exp" >
+       <br>
+           <br>
+           <ul style="list-style-image: url('./assets/logooo.png');">
+            <li> <span class="title">What positions did you occupy during your carrer :</span> </li>
+            </ul>
+    
+               <br>
+               <input type="checkbox" value="aaa" name="position" id="10">
+               <label >Manager</label>
+               <br>
+               <input type="checkbox" value="bbb" name="position" id="11">
+               <label >Personnel chef</label>
+               <br>
+               <input type="checkbox" value="ccc" name="position" id="12">
+               <label >Caterer</label>
+               <br>
+               <input type="checkbox" value="ddd" name="position" id="13">
+               <label >Pastry chef</label>
+                <br>
+               <input type="checkbox" value="eee" name="position" id="14">
+               <label >head cook</label>
+               <br>
+               <input type="checkbox" value="fff" name="position"id="15">
+               <label > line cook</label>
+           
+              <br>
+              <br>
+              <ul style="list-style-image: url('./assets/logooo.png');">
+                <li> <span class="title">Rate your professional carrer</span> </li>
+                </ul>
+         
+        <br>
+        <textarea rows="6" cols="70" id="carrer" name="profcarrer">
+    
+              </textarea>
+         </div>  
+         
+         <ul style="list-style-image: url('./assets/logooo.png');">
+            <li> <span class="title">Enter your CV</span> </li>
+            </ul>
             <br>
+            <input type="file" id="cv" name="cv" name="cv"  >
+            <br>
+       
+        <div class="buttons">
+            <div class="backbtn" onclick="myFunction()">
+                <i class="uil uil-navigator"></i>
+                <span class="btntext">Back</span>
+            </div>
+            <div class="backbtn" onclick="supp()">
+                <span class="btntext">Delete data</span>
+            </div>
+          <button class="nextbtn">
+            <span class="btntext">Submit</span>
+            <i class="uil uil-navigator"></i>
+      </button>
+    </div>
+      </div>
         
+    </div>
     </form>
    </div>
- <script src="script.js"></script> 
+ 
+ <script src="scripttt.js"></script> 
 </body>
 
 </html>

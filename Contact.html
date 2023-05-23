@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="Contact.css" />
     <title>CONTACT|GOOD TASTE </title>
     <link rel="shortcut icon" href="./assets/logo.png">
+    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
   </head>
   <nav>
     <div class="topnav">
@@ -26,75 +28,157 @@
     </div>
   </nav>
   <body>
-    <section class="container-section">
-      <div class="contact-container">
-        <div class="contact-title-style">
-          <h1 class="title-contact">contact us</h1>
-          <h1 id="sous-titre-contact">
-            Article evident arrived express highest men did boy. Mistress
-            sensible entirely am so. Quick can manor smart money hopes worth
-            too. Comfort produce husband boy her had hearing. Law others theirs
-            passed but wishes.
-          </h1>
-        </div>
-        <br>
-        <div>
-          <form action="" method="post">
-            <div class="form-container">
-              <div>
-                <label> email </label>
-                <br />
-                <input class="form-case" type="text" placeholder="Enter a valid email address" />
-              </div>
-              <div>
-                <label> Name </label>
-                <br />
-                <input class="form-case" type="text" placeholder="Enter your name" />
-              </div>
-              
-             
-            </div>
-            <div>
-                <label>Message </label>
-                <br />
-                <input class="form-case-2" type="text" placeholder="Enter your password" />
-              </div>
-             <button class="button-contact">Send</button>
-          </form>
-        </div>
-      </div>
-    </section>
+    
 
-    <section class="HOME">
-      <div class="icons-container">
-        <div class="email">
-          <img class="icon" src="./assets/email (1).png" />
+
+  <div class="main_bg">
+    <div class="form">
+        <div class="form-text">
+            <h1>BOOK NOW </h1>
+            <p>Fill this form to book your Table</p>
         </div>
-        <div class="location">
-          <img class="icon" src="./assets/location.png" />
+        <div class="main-form">
+            <form action="index.php" method="get">
+                <div>
+                    <span>Your full name ?</span>
+                    <input type="text" name="name" id="name" placeholder="Write your name here..." required>
+                </div>
+                <div>
+                    <span>Your email address ?</span>
+                    <input type="email" name="name" id="name" placeholder="Write your email here..." required> 
+                </div>
+                <div>
+                    
+                    <span>How many people ?</span>
+                    <select name="people" id="people" required>
+                        <option value=""><---People---></option>
+                        <option value="1">1 People</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                        <option value="5">4 People</option>
+                        <option value="6">4 People</option>
+                        <option value="7">4 People</option>
+                        <option value="8">4 People</option>
+                        <option value="9">4 People</option>
+                        <option value="10">4 People</option>
+                    </select>
+                    
+                </div>
+                <div>
+                    <span>What time ?</span>
+                    <select name = "hours" id="number" placeholder="Select Hour">
+                      <option value = "hour-select" id="select-hour" >Select Hour</option>
+                      <option value = "10">10: 00</option>
+                      <option value = "10">12: 00</option>
+                      <option value = "10">14: 00</option>
+                      <option value = "10">16: 00</option>
+                      <option value = "10">18: 00</option>
+                      <option value = "10">20: 00</option>
+                      <option value = "10">22: 00</option>
+                  </select>
+                </div>
+                <div>
+                    <span>What is the date ?</span>
+                    <input type="date" name="date" id="date" placeholder="date" required>
+                </div>
+                <div>
+                    <span>Your phone number ?</span>
+                    <input type="number" name="text" id="number" placeholder="Write your number here..." required>
+                </div>
+                <div id="submit">
+                    <input type="submit" value="SUBMIT" id="submit">
+                </div>
+
+
+            </form>
         </div>
-        <div class="phone">
-          <img class="icon" src="./assets/forward.png" />
-        </div>
+    </div>
+  </div>
+
+
+    <footer class="foot">
+      <div class="container">
+          <div class="f-col">
+              <h3>GOOD TASTE</h3>
+              <ul>
+                  <li><a href="Home.html">Home</a></li>
+                  <li><a href="Landing.html">Landing</a></li>
+                  <li><a href="About.html">About</a></li>
+                  <li><a href="Menu.html">Menu</a></li>
+                  <li><a href="Team.html">Team</a></li>
+                  <li><a href="Contact.html">Contact</a></li>
+  
+              </ul>
+              
+  
+          </div>
+          <div class="f-col">
+              <h3>Contact</h3>
+              <ul>
+                  
+                  <li class="icon-center">
+                      <div>
+                          <i class="fa fa-map-marker" ></i>
+                      </div>
+                      <div>
+                          <p><span>121 Rock Street,21 Avenue</span>  New York, NY 92103-9000</p>
+                  
+                      </div>
+                      
+                      
+                  </li>
+                  <li class="icon-center">
+                      <div>
+                          <i class="fa fa-phone"></i>
+                      </div>
+                      <div>
+                          <p id="phone">+216 14 122 001</p>
+                      </div>
+                      
+                      
+                  </li>
+                  <li class="icon-center">
+                      <div>
+                          <i class="fa fa-envelope"></i>
+                      </div>
+                      <div>
+                          <a href="mailto:goodtaste@gmail.com" target="_blank">goodtaste@gmail.com</a>
+                      </div>
+                      
+                      
+                  </li>
+                  <li class="icon-center">
+                      <div>
+                          <i class="fa fa-globe"  ></i>
+                      </div>
+                      <div>
+                          <a href="Home.html" target="_blank">goodtaste.com</a>
+                      </div>
+                      
+                      
+                  </li>
+      
+              </ul>
+              
+  
+          </div>
+  
+          <div class="f-col">
+              <h3>Follow Us</h3>
+              
+              <div class="icon-right">
+                  <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  
+              </div>
+  
+          </div>
       </div>
-      <div class="text-container">
-        <div class="email-texte">
-          <h2 class="h2-title-1">CHART TO US</h2>
-          <h3 class="h3-title-1">Our friendly team is here to help</h3>
-          <h4 class="h4-title-1">goodtaste@gmail.com</h4>
-        </div>
-        <div class="location-texte">
-          <h2 class="h2-title-2">OFFICE</h2>
-          <h3 class="h3-title-2">Come say hello at our office Good taste</h3>
-          <h4 class="h4-title-2">121 Rock Street,21 Avenue</h4>
-          <h4 class="h4-title-2">New York, NY 92103-9000</h4>
-        </div>
-        <div class="phone-texte">
-          <h2 class="h2-title-3">PHONE</h2>
-          <h3 class="h3-title-3">Mon-Fri from 8am to 5am</h3>
-          <h4 class="h4-title-3">+216 14 122 001</h4>
-        </div>
-      </div>
-    </section>
+
+      
+      
+  </footer>
   </body>
 </html>

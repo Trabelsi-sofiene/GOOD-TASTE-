@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Landing.css">
     <link rel="shortcut icon" href="./assets/logo.png">
+    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
     <title>LANDING</title>
 </head>
 <body>
@@ -220,42 +222,91 @@
     
     
 
-    <section class="HOME">
-        <div class="icons-container">
-          <div class="email">
-            <img class="icon" src="./assets/email (1).png" />
-          </div>
-          <div class="location">
-            <img class="icon" src="./assets/location.png" />
-          </div>
-          <div class="phone">
-            <img class="icon" src="./assets/forward.png" />
-          </div>
+    <footer class="foot">
+        <div class="container">
+            <div class="f-col">
+                <h3>GOOD TASTE</h3>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Landing.html">Landing</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Menu.html">Menu</a></li>
+                    <li><a href="Team.html">Team</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+    
+                </ul>
+                
+    
+            </div>
+            <div class="f-col">
+                <h3>Contact</h3>
+                <ul>
+                    
+                    <li class="icon-center">
+                        <div>
+                            <i class="fa fa-map-marker" ></i>
+                        </div>
+                        <div>
+                            <p><span>121 Rock Street,21 Avenue</span>  New York, NY 92103-9000</p>
+                    
+                        </div>
+                        
+                        
+                    </li>
+                    <li class="icon-center">
+                        <div>
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div>
+                            <p id="phone">+216 14 122 001</p>
+                        </div>
+                        
+                        
+                    </li>
+                    <li class="icon-center">
+                        <div>
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <div>
+                            <a href="mailto:goodtaste@gmail.com" target="_blank">goodtaste@gmail.com</a>
+                        </div>
+                        
+                        
+                    </li>
+                    <li class="icon-center">
+                        <div>
+                            <i class="fa fa-globe"  ></i>
+                        </div>
+                        <div>
+                            <a href="Home.html" target="_blank">goodtaste.com</a>
+                        </div>
+                        
+                        
+                    </li>
+        
+                </ul>
+                
+    
+            </div>
+    
+            <div class="f-col">
+                <h3>Follow Us</h3>
+                
+                <div class="icon-right">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    
+                </div>
+    
+            </div>
         </div>
-        <div class="text-container">
-          <div class="email-texte">
-              <h2 class="h2-title-1">CHART TO US</h2>
-              <h3 class="h3-title-1">Our friendly team is here to help</h3>
-              <h4 class="h4-title-1">goodtaste@gmail.com</h4>
-          </div>
-          <div class="location-texte">
-              <h2 class="h2-title-2">OFFICE</h2>
-              <h3 class="h3-title-2">Come say hello at our office Good taste</h3>
-              <h4 class="h4-title-2">121 Rock Street,21 Avenue</h4>
-              <h4 class="h4-title-2">New York, NY 92103-9000</h4>
-          </div>
-          <div class="phone-texte">
-              <h2 class="h2-title-3">PHONE</h2>
-              <h3 class="h3-title-3">Mon-Fri from 8am to 5am</h3>
-              <h4 class="h4-title-3">+216 14 122 001</h4>
-          </div>
-        </div>
+
+        
+        
+    </footer>
     </section>
-    <script>
-        function gotoLink(link){
-            console.log(link.value);
-            location.href = link.value;
-        }
+    <script src="link.js">
     </script>
     
 </body>

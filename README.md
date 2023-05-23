@@ -1,5 +1,6 @@
 # GOOD-TASTE-
 
+
 Le site web du restaurant sera conçu pour présenter le menu, les horaires d'ouverture et les informations de contact du restaurant. La page d'accueil contiendra une bannière avec une photo attrayante du restaurant et un slogan accrocheur pour inciter les visiteurs à explorer le site plus en profondeur.
 
 Le menu sera présenté dans une page dédiée, avec des photos et des descriptions des différents plats. Les visiteurs pourront également filtrer les plats par type, par exemple les entrées, les plats principaux et les desserts.

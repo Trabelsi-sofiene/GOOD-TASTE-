@@ -7,7 +7,145 @@
     <link rel="stylesheet" href="style-team.css" />
     <title>Our Team</title>
     <link rel="shortcut icon" href="./assets/logo.png" />
+    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
   </head>
+
+  <style>
+    body{
+      margin: 0;
+    }
+      .foot{
+        background-color: rgb(45, 44, 44);
+        padding-bottom:0;
+        height:60vh;
+        
+      
+    }
+
+
+    footer .container{
+
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-bottom:0;
+        margin-bottom:0;
+        height:50vh;
+    }
+
+    ul{
+        list-style: none;
+    }
+
+    .f-col{
+        width: 32%;
+        padding: 0 15px;
+    }
+
+    .f-col h3{
+      text-align:center;
+        font-size: 2vw;
+      color: white;
+      margin-bottom: 8vh;
+      font-weight: 500;
+      position: relative;
+    }
+
+    .f-col h3::before{
+        content: '';
+      position: absolute;
+      left:11vw;
+      bottom: -10px;
+      background-color: rgb(238, 131, 9);
+      height: 2px;
+      box-sizing: border-box;
+      width: 80px;
+    }
+
+    .f-col ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+
+    .f-col ul li a {
+        padding-top: 6px;
+        font-size: 1.8vw;
+      color: white;
+      text-decoration: none;
+      font-weight: 300;
+      display: block;
+      transition: all 0.3s ease;
+    }
+
+
+
+    .f-col ul li a:hover{
+        color: rgb(238, 131, 9);
+        padding-left: 10px;
+    }
+
+    .f-col ul li i {
+        background-color: white;
+        height: 40px;
+      width: 40px;
+        text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+        color: #1d202b;
+        transition: all 0.5s ease;
+        margin-left:0;
+        
+    }
+
+    .icon-center{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        
+    }
+    .f-col .icon-right a {
+        display: inline-block;
+      height: 40px;
+      width: 40px;
+      background-color: white;
+      margin:0 20px 20px 10px;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: rgb(45, 44, 44);
+      transition: all 0.5s ease;
+        
+    }
+
+
+
+    .f-col .icon-right a:hover{
+        color: white;
+        background-color:rgb(238, 131, 9);
+    }
+
+    footer p{
+        font-family: futura bold;
+        font-size: 16px;
+        color:white;
+        
+    }
+    #phone{
+        padding-top: 5px;
+    }
+
+    @media(max-width: 767px){
+        .f-col{
+          width: 50%;
+          margin-bottom: 30px;
+      }
+      }
+      @media(max-width: 574px){
+        .f-col{
+          width: 100%;
+      }
+      }
+  </style>
   <nav>
     <div class="topnav">
       <div class="nav-content">
@@ -275,41 +413,89 @@
       </div>
       <br />
       <br />
-      <div class="pul">
-        <section class="HOME">
-          <div class="icons-container">
-            <div class="email">
-              <img class="icon" src="./assets/email (1).png" />
+      <footer class="foot">
+        <div class="container">
+            <div class="f-col">
+                <h3>GOOD TASTE</h3>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Landing.html">Landing</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Menu.html">Menu</a></li>
+                    <li><a href="Team.html">Team</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+    
+                </ul>
+                
+    
             </div>
-            <div class="location">
-              <img class="icon" src="./assets/location.png" />
+            <div class="f-col">
+                <h3>Contact</h3>
+                <ul>
+                    
+                    <li class="icon-center">
+                        <div>
+                            <i class="fa fa-map-marker" ></i>
+                        </div>
+                        <div>
+                            <p><span>121 Rock Street,21 Avenue</span>  New York, NY 92103-9000</p>
+                    
+                        </div>
+                        
+                        
+                    </li>
+                    <li class="icon-center">
+                        <div>
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div>
+                            <p id="phone">+216 14 122 001</p>
+                        </div>
+                        
+                        
+                    </li>
+                    <li class="icon-center">
+                        <div>
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <div>
+                            <a href="mailto:goodtaste@gmail.com" target="_blank">goodtaste@gmail.com</a>
+                        </div>
+                        
+                        
+                    </li>
+                    <li class="icon-center">
+                        <div>
+                            <i class="fa fa-globe"  ></i>
+                        </div>
+                        <div>
+                            <a href="Home.html" target="_blank">goodtaste.com</a>
+                        </div>
+                        
+                        
+                    </li>
+        
+                </ul>
+                
+    
             </div>
-            <div class="phone">
-              <img class="icon" src="./assets/forward.png" />
+    
+            <div class="f-col">
+                <h3>Follow Us</h3>
+                
+                <div class="icon-right">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    
+                </div>
+    
             </div>
-          </div>
-          <div class="text-container">
-            <div class="email-texte">
-              <h2 class="h2-title-1">CHART TO US</h2>
-              <h3 class="h3-title-1">Our friendly team is here to help</h3>
-              <h4 class="h4-title-1">goodtaste@gmail.com</h4>
-            </div>
-            <div class="location-texte">
-              <h2 class="h2-title-2">OFFICE</h2>
-              <h3 class="h3-title-2">
-                Come say hello at our office Good taste
-              </h3>
-              <h4 class="h4-title-2">121 Rock Street,21 Avenue</h4>
-              <h4 class="h4-title-2">New York, NY 92103-9000</h4>
-            </div>
-            <div class="phone-texte">
-              <h2 class="h2-title-3">PHONE</h2>
-              <h3 class="h3-title-3">Mon-Fri from 8am to 5am</h3>
-              <h4 class="h4-title-3">+216 14 122 001</h4>
-            </div>
-          </div>
-        </section>
-      </div>
+        </div>
+
+        
+        
+    </footer>
     </div>
   </body>
   <script>
