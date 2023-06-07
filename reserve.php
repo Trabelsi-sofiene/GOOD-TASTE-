@@ -20,7 +20,7 @@ try {
 
 
   $stmt = $bdd->prepare("INSERT INTO reserve VALUES (?,?,?,?,?,?)");
-  $stmt->execute([$fullname, $email, $date3, $people, $hour, $numberp ]);
+  $stmt->execute([$fullname, $date3, $email, $people, $hour, $numberp ]);
   
   echo 'Votre reservation a été bien retenue!';
 
